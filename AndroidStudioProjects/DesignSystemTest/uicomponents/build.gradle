@@ -4,6 +4,15 @@ plugins {
     id 'maven-publish'
 }
 
+allprojects {
+    buildscript {
+        repositories {
+            jcenter()
+            mavenCentral()
+        }
+    }
+}
+
 android {
     namespace 'com.jonathanbriceno.uicomponents'
     compileSdk 33
